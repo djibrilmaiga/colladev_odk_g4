@@ -1,7 +1,6 @@
 **user story de UI/UX  de l'application web:
 
  -En tant que développeur utilisateur Je veux une interface intuitive, moderne et bien organisée Afin de naviguer facilement entre les projets, voir mon niveau et suivre mes récompenses sans confusion;
- -En tant que développeur débutant,Je veux une interface claire avec des explications et des guides interactifs.
 
  **Definition of Done (DoD):
 
