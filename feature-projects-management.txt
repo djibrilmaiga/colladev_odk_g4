@@ -1,0 +1,18 @@
+Pour une gestion efficace de la fonctionnalité de création et gestion des projets dans CollabDev, 
+il est judicieux de décomposer la fonctionnalité en trois User Stories distinctes : 
+
+1. Création de projets
+
+User Story1 : En tant qu'utilisateur authentifié, je souhaite pouvoir créer un nouveau projet 
+en fournissant des informations telles que le nom du projet, une description et le niveau requis,
+afin de lancer des initiatives et inviter d'autres développeurs à collaborer.
+
+DoD1 :
+
+Les utilisateurs authentifiés peuvent accéder à un formulaire de création de projet.
+Les champs obligatoires incluent : nom du projet, description, niveau requis.
+Des validations sont en place pour assurer la validité des données saisies.
+Après soumission, le projet est enregistré dans la base de données et apparaît dans la liste des projets disponibles.
+Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la soumission.
+Des tests unitaires et d'intégration couvrant le processus de création de projet sont implémentés et réussis.
+
