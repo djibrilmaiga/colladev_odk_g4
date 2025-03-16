@@ -1,0 +1,20 @@
+User story: En tant que développeur, je veux initialiser mon projet et configurer un dépôt 
+GitHUb afin de versionner mon code et collaborer efficacement avec mon équipe.
+
+
+Definition of Done (DoD):
+Initialisation du projet et setup du repo GitHub
+
+_ Il faut créé et initialisé un dépôt local Git.
+
+_ Le dépôt doit contenir au moins un fichier commité.
+
+_ Un fichier .gitignore doit être ajouté et commité pour exclure les fichiers
+   
+  inutiles.
+
+_ Le projet doit être lié à un dépôt distant GiHub
+
+_ Le code est poussé sur GitHub et visible sur la branche
+
+_  L’équipe est informée de l’existence du repo et sait comment y contribuer.
