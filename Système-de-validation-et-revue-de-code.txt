@@ -1,0 +1,9 @@
+En tant que contributeur, je veux soumettre une fonctionnalité ou du code pour qu’il soit examiné.
+
+DoD :
+
+Formulaire de soumission (fichiers code, description).
+
+Intégration avec GitHub (création d’une PR simulée).
+
+Notification aux reviewers.
