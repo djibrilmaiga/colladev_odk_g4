@@ -1,0 +1,1 @@
+Un système de récompenses est implémenté, permettant aux utilisateurs de gagner des pièces en fonction de leurs contributions.
