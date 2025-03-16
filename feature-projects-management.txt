@@ -16,3 +16,17 @@ Après soumission, le projet est enregistré dans la base de données et appara�
 Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la soumission.
 Des tests unitaires et d'intégration couvrant le processus de création de projet sont implémentés et réussis.
 
+
+2. Modification de projets
+
+User Story 2 : En tant que propriétaire d'un projet, je souhaite pouvoir modifier les détails de mon projet,
+tels que le nom, la description ou le niveau requis, afin de refléter les mises à jour ou les changements nécessaires.
+
+DoD 2 :
+
+Les propriétaires de projets peuvent accéder à une interface d'édition pour leurs propres projets.
+Les mêmes validations que lors de la création s'appliquent aux modifications.
+Les modifications sont enregistrées dans la base de données et mises à jour en temps réel dans la liste des projets.
+Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la modification.
+Des tests unitaires et d'intégration couvrant le processus de modification de projet sont implémentés et réussis.
+
