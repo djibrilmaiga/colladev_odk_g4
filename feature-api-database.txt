@@ -1,1 +1,12 @@
-En tant qu'DBA, je veux pouvoir me connecter à la base de donnée.
+User Story 1 : En tant que développeur, je veux accéder aux données d'un projet via une api.
+
+DoD :
+- Documentation Swagger/Postman de l'API.
+- Les Endpoints des API sont sécurisés avec JWT.
+- Tests Postman validant chaque endpoint.
+
+User Story 2 : En tant que développeur, je veux versionner l’API pour éviter les breaking changes.
+
+DoD :
+- Versioning de l’API via l’URL (ex: /api/v1/projects, /api/v2/projects).
+- Documentation séparée pour chaque version.
