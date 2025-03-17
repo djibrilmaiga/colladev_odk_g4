@@ -4,5 +4,4 @@ user story2: en tant que utilisateur je souhaite je souhaite pouvoir me connecte
 dod1:Formulaire d'inscription est accessible depuis la page d’accueil. Les champs obligatoires incluent (nom, e-mail, mot de passe) confirmation de mot de passe. Les erreurs de validation sont affichées de manière claire et conviviale. Un message de succès est affiché après une inscription réussie. L’utilisateur est automatiquement connecté après l’inscription. La documentation est mise à jour avec les détails de l’inscription.
 
 
-
 dod2:Le formulaire de connexion est accessible depuis la page d’accueil. Les champs obligatoires incluent : email et mot de passe. Les erreurs de validation (email/mot de passe incorrect) sont gérées et affichées. La connexion est réussie si les informations d’identification sont valides. Une fois connecté, l’utilisateur est redirigé vers le tableau de bord.
