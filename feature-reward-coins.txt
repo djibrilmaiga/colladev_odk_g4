@@ -1,0 +1,12 @@
+# Système de Récompenses (Pièces)
+
+## User Story
+
+En tant qu'utilisateur, je veux gagner des pièces en accomplissant des tâches pour pouvoir les échanger contre des récompenses.
+
+## Definition of Done (DoD)
+
+- L'utilisateur peut gagner des pièces en accomplissant des tâches.
+- Les pièces sont affichées dans le profil de l'utilisateur.
+- Les pièces peuvent être échangées contre des récompenses.
+- Toutes les fonctionnalitées doivent etre testé pour garantir le bon fonctionnement.
