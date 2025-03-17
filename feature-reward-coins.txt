@@ -9,4 +9,4 @@ En tant qu'utilisateur, je veux gagner des pièces en accomplissant des tâches 
 - L'utilisateur peut gagner des pièces en accomplissant des tâches.
 - Les pièces sont affichées dans le profil de l'utilisateur.
 - Les pièces peuvent être échangées contre des récompenses.
-- Les tests unitaires sont écrits et passent.
+- Toutes les fonctionnalitées doivent etre testé pour garantir le bon fonctionnement.
