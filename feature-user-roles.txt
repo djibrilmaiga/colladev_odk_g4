@@ -1,0 +1,45 @@
+user storie 1: En tant qu'administrateur,
+Je veux pouvoir attribuer un rôle à un nouvel utilisateur lors de sa création,
+Afin de lui accorder immédiatement les permissions adéquates.
+
+user storie 2: En tant qu'administrateur,
+Je veux pouvoir modifier le rôle d’un utilisateur existant,
+Afin de lui accorder ou lui restreindre certaines permissions.
+
+user storie 3: En tant qu'administrateur,
+Je veux pouvoir voir la liste des utilisateurs et leurs rôles,
+Afin de m’assurer que chacun dispose du bon niveau d’accès.
+
+user story 4 : En tant qu'administrateur,
+Je veux pouvoir attribuer différents niveaux d’accès au sein d’un même rôle,
+Afin de contrôler plus précisément les permissions des utilisateurs.
+
+user story 5 : En tant qu'administrateur,
+Je veux que seules certaines personnes puissent modifier les rôles et niveaux d’accès,
+Afin de garantir la sécurité des données et des accès.
+
+DoD 1: 
+ . Un administrateur peut créer un utilisateur avec un rôle sélectionnable.
+ . L’utilisateur nouvellement créé possède bien le rôle attribué en base de données.
+ . L’interface affiche correctement le rôle attribué lors de la création.
+
+ DoD 2: 
+ .  Un administrateur peut modifier le rôle d’un utilisateur via l’interface.
+ .  Le changement de rôle est immédiatement pris en compte dans l’application.
+ .  Une notification est envoyée à l’utilisateur concerné.
+ .  Un journal d’audit enregistre la modification.
+
+ DoD 3:
+ .  Une liste des utilisateurs et de leurs rôles est visible dans l’interface.
+ .  La barre de recherche permet de filtrer les utilisateurs par rôle.
+ .  Les données affichées correspondent bien à celles en base de données.
+
+ DoD 4:
+ .  Les niveaux d’accès sont définissables pour chaque rôle.
+ .  Un administrateur peut modifier le niveau d’accès d’un utilisateur via l’interface.
+ .  Les permissions associées aux niveaux d’accès sont appliquées automatiquement.
+
+ DoD 5:
+ .  Seuls les administrateurs peuvent attribuer ou modifier les rôles et niveaux.
+ .  Une restriction d’accès empêche tout autre utilisateur d’effectuer ces actions.
+ .  Un journal d’audit enregistre toutes les modifications des rôles et niveaux.
