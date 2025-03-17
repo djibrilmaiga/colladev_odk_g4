@@ -1,0 +1,17 @@
+US1 : En tant que contributeur, je veux soumettre une fonctionnalité ou du code pour qu’il soit examiné.
+DoD :
+Formulaire de soumission (fichiers code, description).
+Intégration avec GitHub (création d’une PR simulée).
+Notification aux reviewers.
+
+US2 : En tant que reviewer, je veux commenter et approuver/rejeter du code
+DoD :
+Afficher une différence claireen
+Pouvoir ajouter des commentaires ligne par ligne .
+Pouvoir accepter ou rejeter une PR
+
+US3:  En tant que développeur, je veux soumettre mon code pour revue
+DoD :
+Demande d'extraction (PR) par
+Le code soumis doit respecter les lignes directrices du projet .
+L'équipe doit recevoir une notification lorsqu'une
