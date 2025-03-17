@@ -1,0 +1,46 @@
+Pour une gestion efficace de la fonctionnalité de création et gestion des projets dans CollabDev, 
+il est judicieux de décomposer la fonctionnalité en trois User Stories distinctes : 
+
+1. Création de projets
+
+User Story1 : En tant qu'utilisateur authentifié, je souhaite pouvoir créer un nouveau projet 
+en fournissant des informations telles que le nom du projet, une description et le niveau requis,
+afin de lancer des initiatives et inviter d'autres développeurs à collaborer.
+
+DoD1 :
+
+Les utilisateurs authentifiés peuvent accéder à un formulaire de création de projet.
+Les champs obligatoires incluent : nom du projet, description, niveau requis.
+Des validations sont en place pour assurer la validité des données saisies.
+Après soumission, le projet est enregistré dans la base de données et apparaît dans la liste des projets disponibles.
+Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la soumission.
+Des tests unitaires et d'intégration couvrant le processus de création de projet sont implémentés et réussis.
+
+
+2. Modification de projets
+
+User Story 2 : En tant que propriétaire d'un projet, je souhaite pouvoir modifier les détails de mon projet,
+tels que le nom, la description ou le niveau requis, afin de refléter les mises à jour ou les changements nécessaires.
+
+DoD 2 :
+
+Les propriétaires de projets peuvent accéder à une interface d'édition pour leurs propres projets.
+Les mêmes validations que lors de la création s'appliquent aux modifications.
+Les modifications sont enregistrées dans la base de données et mises à jour en temps réel dans la liste des projets.
+Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la modification.
+Des tests unitaires et d'intégration couvrant le processus de modification de projet sont implémentés et réussis.
+
+3. Suppression de projets
+
+User Story 3 : En tant que propriétaire d'un projet, je souhaite pouvoir supprimer mon projet si nécessaire,
+afin de retirer des initiatives obsolètes ou non pertinentes de la plateforme.
+
+DoD 3 :
+
+Les propriétaires de projets peuvent accéder à une option de suppression pour leurs propres projets.
+Une confirmation est requise avant la suppression définitive du projet.
+Une fois confirmé, le projet est supprimé de la base de données et n'apparaît plus dans la liste des projets.
+Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la suppression.
+Des tests unitaires et d'intégration couvrant le processus de suppression de projet sont implémentés et réussis.
+
+
