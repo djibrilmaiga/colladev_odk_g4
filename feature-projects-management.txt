@@ -1,46 +1,146 @@
 Pour une gestion efficace de la fonctionnalité de création et gestion des projets dans CollabDev, 
-il est judicieux de décomposer la fonctionnalité en trois User Stories distinctes : 
+il est judicieux de décomposer la fonctionnalité en 9 User Stories distinctes : 
 
 1. Création de projets
 
-User Story1 : En tant qu'utilisateur authentifié, je souhaite pouvoir créer un nouveau projet 
-en fournissant des informations telles que le nom du projet, une description et le niveau requis,
-afin de lancer des initiatives et inviter d'autres développeurs à collaborer.
+User Story1 : En tant qu'utilisateur authentifié, Je veux remplir un formulaire pour soumettre un projet 
+avec un cahier des charges et un niveau de difficulté, Afin que mon projet soit publié et visible sur la plateforme.
 
 DoD1 :
 
-Les utilisateurs authentifiés peuvent accéder à un formulaire de création de projet.
-Les champs obligatoires incluent : nom du projet, description, niveau requis.
-Des validations sont en place pour assurer la validité des données saisies.
-Après soumission, le projet est enregistré dans la base de données et apparaît dans la liste des projets disponibles.
-Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la soumission.
-Des tests unitaires et d'intégration couvrant le processus de création de projet sont implémentés et réussis.
+Formulaire avec :
+Nom du projet (champ obligatoire).
+Titre, Description, Niveau (Débutant/Intermédiaire/Avancé).
+Éditeur de texte pour le cahier des charges.
+Bouton "Soumettre" pour valider.
+Aperçu du projet avant publication.
+Notification de confirmation : "Projet créé !".
+✅ Tests :
+Vérification du bon affichage des champs obligatoires.
+Validation de la soumission d’un projet avec/sans erreurs.
+Test du champ "Nom du projet" pour s’assurer qu’il est bien pris en compte.
 
 
-2. Modification de projets
+2.Utilisation d’un Template de Cahier des Charges
 
-User Story 2 : En tant que propriétaire d'un projet, je souhaite pouvoir modifier les détails de mon projet,
-tels que le nom, la description ou le niveau requis, afin de refléter les mises à jour ou les changements nécessaires.
+User Story 2 :
+En tant que utilisateur pressé,
+Je veux choisir un modèle prédéfini pour mon cahier des charges,
+Afin de gagner du temps et éviter les oublis.
 
-DoD 2 :
+DoD2 :
+Bouton "Choisir un template" dans l’éditeur.
+3 templates minimum 
+Personnalisation possible des sections du template (ajout/suppression).
+✅ Tests :
+Vérification du bon chargement des templates.
+Test d’ajout/suppression de sections dans un template.
 
-Les propriétaires de projets peuvent accéder à une interface d'édition pour leurs propres projets.
-Les mêmes validations que lors de la création s'appliquent aux modifications.
-Les modifications sont enregistrées dans la base de données et mises à jour en temps réel dans la liste des projets.
-Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la modification.
-Des tests unitaires et d'intégration couvrant le processus de modification de projet sont implémentés et réussis.
 
-3. Suppression de projets
+3. Ajout de Tags Technologiques
 
-User Story 3 : En tant que propriétaire d'un projet, je souhaite pouvoir supprimer mon projet si nécessaire,
-afin de retirer des initiatives obsolètes ou non pertinentes de la plateforme.
+User Story 3 :
+En tant que créateur de projet,
+Je veux taguer mon projet avec les technologies requises (ex: React, Python),
+Afin que les contributeurs potentiels puissent le trouver facilement.
 
 DoD 3 :
+Champ "Tags" avec suggestions automatiques (liste prédéfinie).
+Affichage des tags sur la fiche du projet.
+Limite de 5 tags par projet.
+✅ Tests :
+Test de suggestion automatique des tags.
+Vérification du respect de la limite de 5 tags.
 
-Les propriétaires de projets peuvent accéder à une option de suppression pour leurs propres projets.
-Une confirmation est requise avant la suppression définitive du projet.
-Une fois confirmé, le projet est supprimé de la base de données et n'apparaît plus dans la liste des projets.
-Des messages de confirmation ou d'erreur sont affichés en fonction du résultat de la suppression.
-Des tests unitaires et d'intégration couvrant le processus de suppression de projet sont implémentés et réussis.
+4. Définition d’un Budget en Pièces
+User Story 4 : 
+En tant que créateur de projet,
+Je veux allouer un nombre de pièces à distribuer aux futurs contributeurs,
+Afin de motiver les développeurs à participer.
 
+DoD 4 :
+Champ "Budget en pièces" dans le formulaire de création.
+Affichage du budget sur la fiche du projet ("Récompense totale : X pièces").
+Avertissement si le budget dépasse le solde du créateur.
+✅ Tests :
+Vérification de l’affichage du budget.
+Simulation d’un budget dépassant le solde et affichage de l’avertissement.
 
+5. Modification d’un Projet après Soumission
+
+User Story 5 :
+En tant que créateur de projet,
+Je veux éditer le nom, le titre, la description ou le cahier des charges après publication,
+Afin de corriger des erreurs ou mettre à jour les exigences.
+
+DoD 5 :
+Bouton "Éditer le projet" (visible uniquement par le créateur).
+Historique des modifications accessible (date, auteur).
+Notification aux contributeurs en cas de changement majeur.
+✅ Tests :
+Vérification de la mise à jour du projet.
+Test de l’historique des modifications.
+
+6. Suppression/Archivage d’un Projet
+
+User Story 6 : 
+En tant que créateur de projet,
+Je veux supprimer ou archiver mon projet,
+Afin de retirer un projet abandonné ou obsolète.
+
+DoD 6 :
+Bouton "Archiver" ou "Supprimer" dans les paramètres du projet.
+Confirmation obligatoire avec saisie de mot de passe.
+Suppression définitive après 30 jours.
+✅ Tests :
+Test d’archivage et de restauration du projet.
+Vérification du processus de suppression et du délai de 30 jours.
+
+7.Paramétrage de la Visibilité du Projet
+
+User  Story 7 : 
+En tant que créateur de projet,
+Je veux choisir si mon projet est public, privé ou visible par lien,
+Afin de contrôler qui peut voir ou contribuer au projet.
+
+DoD 7:
+Menu déroulant "Visibilité" dans les paramètres du projet :
+Public (visible par tous).
+Privé (visible par les contributeurs invités).
+Lien partageable (accès via URL).
+Pour les projets privés :
+Système d’invitation par email ou pseudo.
+✅ Tests :
+Vérification du changement de visibilité.
+Test de l’invitation et de l’accès aux projets privés.
+
+8. Gestion des Accès (Collaborateurs Initiaux)
+
+User Story 8 : 
+En tant que créateur de projet,
+Je veux ajouter des co-gestionnaires pour m’aider à organiser le projet,
+Afin de déléguer la modération ou les mises à jour.
+
+DoD 8:
+Section "Gestionnaires" dans les paramètres du projet.
+Ajout de collaborateurs via pseudo/email.
+Rôles assignables :
+Éditeur (modifier le projet).
+Admin (tout faire).
+✅ Tests :
+Vérification de l’ajout et de la suppression des gestionnaires.
+Test des rôles et de leurs permissions.
+
+9. Signalement d’un Projet pour Modération
+User Story 9 : 
+En tant que utilisateur,
+Je veux signaler un projet qui ne respecte pas les règles de la plateforme,
+Afin de contribuer à maintenir un environnement sain.
+
+DoD 9:
+Bouton "Signaler" sur la fiche du projet.
+Menu déroulant avec motifs de signalement (spam, contenu offensant, etc.).
+Notification automatique aux modérateurs avec lien vers le projet.
+✅ Tests :
+Vérification du bon envoi des signalements.
+Test de réception des notifications par les modérateurs
